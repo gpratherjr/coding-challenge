@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CodingChallengeApi.Data/1.0.0": {
+        "dependencies": {
+          "CodingChallengeApi.Core": "1.0.0"
+        },
+        "runtime": {
+          "CodingChallengeApi.Data.dll": {}
+        }
+      },
+      "CodingChallengeApi.Core/1.0.0": {
+        "runtime": {
+          "CodingChallengeApi.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodingChallengeApi.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CodingChallengeApi.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

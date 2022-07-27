@@ -1,0 +1,318 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi\\CodingChallengeApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\CodingChallengeApi.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\CodingChallengeApi.Configuration.csproj",
+        "projectName": "CodingChallengeApi.Configuration",
+        "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\CodingChallengeApi.Configuration.csproj",
+        "packagesPath": "C:\\Users\\garyp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\garyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj"
+              },
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj",
+        "projectName": "CodingChallengeApi.Core",
+        "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj",
+        "packagesPath": "C:\\Users\\garyp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\garyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj",
+        "projectName": "CodingChallengeApi.Data",
+        "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj",
+        "packagesPath": "C:\\Users\\garyp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\garyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj",
+        "projectName": "CodingChallengeApi.Service",
+        "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj",
+        "packagesPath": "C:\\Users\\garyp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\garyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Core\\CodingChallengeApi.Core.csproj"
+              },
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Data\\CodingChallengeApi.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi\\CodingChallengeApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi\\CodingChallengeApi.csproj",
+        "projectName": "CodingChallengeApi",
+        "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi\\CodingChallengeApi.csproj",
+        "packagesPath": "C:\\Users\\garyp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\garyp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\CodingChallengeApi.Configuration.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Configuration\\CodingChallengeApi.Configuration.csproj"
+              },
+              "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj": {
+                "projectPath": "C:\\Users\\garyp\\source\\repos\\coding-challenge\\CodingChallengeApi\\CodingChallengeApi.Service\\CodingChallengeApi.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
