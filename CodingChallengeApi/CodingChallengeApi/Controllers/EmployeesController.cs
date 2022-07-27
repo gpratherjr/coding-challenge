@@ -17,6 +17,7 @@ public class EmployeesController : ControllerBase
     }
 
     [HttpGet]
+    [ProducesResponseType(typeof(IList<Employee>), StatusCodes.Status200OK)]
     public IActionResult GetEmployees()
     {
         IList<Employee> employees = _employeeService.GetEmployees();
@@ -27,5 +28,21 @@ public class EmployeesController : ControllerBase
     public IActionResult GetEmployee(int employeeId)
     {
         return Ok();
+    }
+
+    [HttpPut("{employeeId}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult UpdateEmployee(int employeeId, Employee employee)
+    {
+        _employeeService.UpdateEmployee(employeeId, employee);
+        return Ok();
+    }
+
+    [HttpPost()]
+    [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+    public IActionResult CreateEmployee(Employee employee)
+    {
+        int id = _employeeService.CreateEmployee(employee);
+        return Ok(id);
     }
 }

@@ -8,5 +8,7 @@ using System.Threading.Tasks;
 namespace CodingChallengeApi.Data.Abstractions;
 public interface IEmployeeRepository
 {
+    int CreateEmployee(Employee employee);
     IList<Employee> GetEmployees();
+    void UpdateEmployee(int employeeId, Employee employee);
 }

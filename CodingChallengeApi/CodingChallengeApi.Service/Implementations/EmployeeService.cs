@@ -16,4 +16,14 @@ internal class EmployeeService : IEmployeeService
     {
         return _employeeRepository.GetEmployees();
     }
+
+    public int CreateEmployee(Employee employee)
+    {
+        return _employeeRepository.CreateEmployee(employee);
+    }
+
+    public void UpdateEmployee(int employeeId,Employee employee)
+    {
+        _employeeRepository.UpdateEmployee(employeeId, employee);
+    }
 }
