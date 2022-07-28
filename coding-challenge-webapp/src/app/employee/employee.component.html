@@ -1,5 +1,79 @@
+
+<div class="container">
+    <form #employeeForm="ngForm">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput required [(ngModel)]="employee.firstName" name="firstName">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput required [(ngModel)]="employee.lastName" name="lastName">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Salary</mat-label>
+            <input matInput disabled [(ngModel)]="employee.salary" name="salary">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Deductions</mat-label>
+            <input matInput disabled [(ngModel)]="employee.deductions" name="deductions">
+        </mat-form-field>
+    </form>
+</div>
+<mat-divider></mat-divider>
+<h1>Dependents</h1>
+<table mat-table [dataSource]="dependentDataSource" class="mat-elevation-z8">  
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef> First Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef> Last Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef><mat-icon fontIcon="add" (click)="activateAdd()"></mat-icon></th>
+      <td mat-cell *matCellDef="let element" (click)="removeDependent(element)"> 
+        <mat-icon fontIcon="delete"></mat-icon>
+    </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+<div class="container" *ngIf="adding">
+    <mat-divider></mat-divider>
+    <h1>New Dependent</h1>
+    <form #newDepForm="ngForm">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput required [(ngModel)]="newDependent.firstName" name="firstName">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput required [(ngModel)]="newDependent.lastName" name="lastName">
+        </mat-form-field>
+        
+        <button 
+            mat-raised-button
+            type="button"
+            [disabled]="newDepForm.invalid"
+            (click)="addDependent()"
+            color="primary"
+            >Add Dependent</button>
+    </form>
+</div>
 <button 
-    mat-button
+    mat-raised-button
+    type="button"
+    (click)="employee.id > 0 ? updateEmployee() : createEmployee()"
+    color="primary"
+    >{{updateButtonText}}</button>
+<button 
+    mat-raised-button
+    type="button"
     (click)="backToEmployees()"
     color="primary"
     >Return to Employees List</button>

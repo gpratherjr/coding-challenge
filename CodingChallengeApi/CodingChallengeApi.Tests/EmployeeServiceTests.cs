@@ -24,6 +24,7 @@ public class EmployeeServiceTests
             new Employee { Id = 2, FirstName = "test", LastName = "test" }
         });
         _deductionCalculator.CalculateDeductions(Arg.Any<Employee>()).Returns(_deduction);
+        _employeeRepository.GetEmployee(Arg.Any<int>()).Returns(new Employee());
         _sut = new EmployeeService(_employeeRepository, _deductionCalculator);
     }
 

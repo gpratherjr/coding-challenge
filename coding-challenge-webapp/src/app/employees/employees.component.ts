@@ -15,8 +15,7 @@ export class EmployeesComponent implements OnInit, OnDestroy {
   displayedColumns: string[] = ['id', 'firstName', 'lastName'];
 
   constructor(private employeeService: EmployeesService,
-    private router: Router) { }
-  
+    private router: Router) { }  
 
   ngOnInit(): void {
     this.employeeService.getEmployees()
@@ -30,10 +29,10 @@ export class EmployeesComponent implements OnInit, OnDestroy {
   }
 
   selectEmployee(id: number): void {
-    this.router.navigate(['employee', { id }]);
+    this.router.navigate(['employee', id]);
   }
 
   createNewEmployee(): void {
-    this.router.navigate(['employee', { id: 0 }]);
+    this.router.navigate(['employee', 0]);
   }
 }

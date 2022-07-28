@@ -30,6 +30,14 @@ namespace CodingChallengeApi
 
             app.UseHttpsRedirection();
 
+            app.UseCors(policyBuilder =>
+            {
+                policyBuilder
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin();
+            });
+
             app.UseAuthorization();
 
 
