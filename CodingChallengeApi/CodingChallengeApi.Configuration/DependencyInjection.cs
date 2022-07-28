@@ -13,6 +13,7 @@ public class DependencyInjection
     {
         services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
         services.AddSingleton<IEmployeeService, EmployeeService>();
+        services.AddSingleton<IDeductionCalculator, DeductionCalculator>();
 
         services.AddValidatorsFromAssemblyContaining<EmployeeValidator>();
     }

@@ -1,6 +1,5 @@
 ﻿using CodingChallengeApi.Core.Models;
 using CodingChallengeApi.Service.Abstractions;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodingChallengeApi.Controllers;
@@ -21,13 +20,14 @@ public class EmployeesController : ControllerBase
     public IActionResult GetEmployees()
     {
         IList<Employee> employees = _employeeService.GetEmployees();
-        return Ok(employees);
+        return Ok(GetResponse(employees));
     }
 
     [HttpGet("{employeeId}")]
     public IActionResult GetEmployee(int employeeId)
     {
-        return Ok();
+        Employee employee = _employeeService.GetEmployee(employeeId);
+        return Ok(GetResponse(employee));
     }
 
     [HttpPut("{employeeId}")]
@@ -35,7 +35,7 @@ public class EmployeesController : ControllerBase
     public IActionResult UpdateEmployee(int employeeId, Employee employee)
     {
         _employeeService.UpdateEmployee(employeeId, employee);
-        return Ok();
+        return Ok(GetResponse(null));
     }
 
     [HttpPost()]
@@ -43,6 +43,15 @@ public class EmployeesController : ControllerBase
     public IActionResult CreateEmployee(Employee employee)
     {
         int id = _employeeService.CreateEmployee(employee);
-        return Ok(id);
+        return Ok(GetResponse(id));
+    }
+
+    private static ApiResponse GetResponse(object data)
+    {
+        return new ApiResponse
+        {
+            Data = data,
+            Status = System.Net.HttpStatusCode.OK
+        };
     }
 }

@@ -8,6 +8,11 @@ internal class EmployeeRepository : IEmployeeRepository
     {
         return SimulatedDatabase.Employees.Values.ToList();
     }
+    public Employee GetEmployee(int employeeId)
+    {
+        if (!SimulatedDatabase.Employees.ContainsKey(employeeId)) throw new ArgumentException("Employee id does not exist");
+        return SimulatedDatabase.Employees[employeeId];
+    }
 
     public int CreateEmployee(Employee employee)
     {
